@@ -1,9 +1,9 @@
 # Data-Analysis-on-Drugs-Side-Effects-and-Medical-Conditions-ML-Project-
 
-1.Objective
+1.Objective-
 The goal is to analyze the relationships between drugs, their side effects, and the medical conditions they treat, as well as to explore the ratings and reviews associated with these drugs.
 
-2. Dataset Overview
+2. Dataset Overview-
 The dataset contains the following columns:
 ● drug_name: Name of the drug.
 ● medical_condition: The condition the drug is used to treat.
@@ -25,12 +25,12 @@ condition.
 ● medical_condition_url: URL link to more information about the medical
 condition.
 
-3. Tools Required
+3. Tools Required-
 ● Python: The primary programming language for data analysis.
 ● Pandas: For data manipulation and analysis.
 ● Matplotlib/Seaborn: For data visualization.
 ● Jupyter Notebook: To write and run Python code.
-4. Step-by-Step Guide
+4. Step-by-Step Guide-
 Step 1: Import Libraries
 import pandas as pd
 import matplotlib.pyplot as plt
