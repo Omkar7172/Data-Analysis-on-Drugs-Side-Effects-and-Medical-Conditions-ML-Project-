@@ -36,27 +36,27 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 Step 2: Load the Dataset
-# Load your dataset
+Load your dataset
 df = pd.read_csv('path_to_your_dataset.csv')
-# Display the first few rows of the dataset
+Display the first few rows of the dataset
 df.head()
 Step 3: Data Cleaning
 ● Check for missing values:
-# Check for missing values
+Check for missing values
 df.isnull().sum()
 ● Handle missing values:
 ○ Drop or fill missing values depending on the context.
-# Example: Drop rows with missing values
+Example: Drop rows with missing values
 df_cleaned = df.dropna()
-# Or fill missing values with a placeholder
+ Or fill missing values with a placeholder
 df_filled = df.fillna('Unknown')
 
 Step 4: Basic Data Exploration
 ● Summary statistics:
-# Summary statistics
+ Summary statistics
 df.describe()
 ● Distribution of Ratings:
-# Distribution of drug ratings
+ Distribution of drug ratings
 plt.figure(figsize=(10, 6))
 sns.histplot(df['rating'], bins=10, kde=True)
 plt.title('Distribution of Drug Ratings')
@@ -66,17 +66,17 @@ plt.show()
 
 Step 5: Analyzing Relationships
 ● Top Drugs by Condition:
-# Count the most common drugs for each medical condition
+Count the most common drugs for each medical condition
 top_drugs =
 df.groupby('medical_condition')['drug_name'].value_counts().nla
 rgest(10)
 print(top_drugs)
 ● Side Effects Analysis:
-# Analyzing the most common side effects
+Analyzing the most common side effects
 side_effects = df['side_effects'].value_counts().head(10)
 print(side_effects)
 ● Drug Ratings by Class:
-# Boxplot of ratings by drug class
+Boxplot of ratings by drug class
 plt.figure(figsize=(12, 8))
 sns.boxplot(x='drug_classes', y='rating', data=df)
 plt.xticks(rotation=90)
